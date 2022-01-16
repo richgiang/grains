@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FCEDD9;
+    overflow-y: hide;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Grotesk-Bold;
+    src: url(fonts/NeueHaasDisplayBold.ttf);
+}
+
+@font-face {
+    font-family: Grotesk-Light;
+    src: url(fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: Grotesk-Light-Italic;
+    src: url(fonts/NeueHaasDisplayLightItalic.ttf);
+}
+
+@font-face {
+    font-family: Grotesk-Bold-Italic;
+    src: url(fonts/NeueHaasDisplayBoldItalic.ttf);
+}
+
+/* 
+
+Meno Semi-bold Italic
+font-family: meno-banner,serif;
+font-weight: 600;
+font-style: italic;
+
+Meno Light Italic
+font-family: meno-banner,serif;
+font-weight: 300;
+font-style: italic;
+
+Colors:
+Green - #59846c
+Black - #161413
+Cream - #FCEDD9
+
+*/
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    position: fixed;
+    font-family: Grotesk-Bold;
+    color: #59846c;
+    font-size: 3rem;
+    top: 5%;
+    left: 5%;
+}
+
+.menu{
+    display: flex;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: Grotesk-Light;
+    color: #59846c;
+}
+
+.header{
+    font-family: Grotesk-Bold;
+    font-size: 11.5rem;
+    width: 90%;
+    padding-left: 10%;
+}
+
+.header p span{
+    color: #59846c;
+    font-family: meno-banner,serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.company-info{
+    padding-top: 7.5%;
+}
+
+.goals-title{
+    font-family: Grotesk-Bold;
+    font-size: 9rem;
+}
+
+.goals{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    padding-top: 3%;
+}
+
+.goal-1{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.goal-2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.goal-3{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.goal-1, .goal-2, .goal-3{
+    font-family: Grotesk-Light;
+    font-size: 8rem;
+    color: #59846c;
+}
+
+.goal-number{
+    font-family: meno-banner,serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2rem;
+    color: #161413;
+}
+
+.meno-italics{
+    font-size: 5rem;
+    font-family: meno-banner,serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #59846c;
+}
+
+.goal-1:after, .goal-2:after, .goal-3:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+.goal-1:hover:after, .goal-2:hover:after, .goal-3:hover:after {
+	width: 100%;
+	left: 0;
+}
