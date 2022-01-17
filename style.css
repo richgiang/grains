@@ -153,19 +153,25 @@ Cream - #FCEDD9
     color: #59846c;
 }
 
-.goal-1:after, .goal-2:after, .goal-3:after {
-	background: none repeat scroll 0 0 transparent;
-	bottom: 0;
-	content: "";
-	display: block;
-	height: 2px;
-	left: 50%;
-	position: absolute;
-	background: #fff;
-	transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	width: 0;
+.goal-title{
+    transition: ease .5s;
 }
-.goal-1:hover:after, .goal-2:hover:after, .goal-3:hover:after {
-	width: 100%;
-	left: 0;
+
+.goal-title:hover{
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.goal-description{
+    font-size: 1rem;
+}
+
+.goal-description{
+    width: 30%;
+    display: none;
+    transition: ease 5s;
+}
+
+.goal-title:hover + .goal-description{
+    display: block;
 }
