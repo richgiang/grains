@@ -167,11 +167,49 @@ Cream - #FCEDD9
 }
 
 .goal-description{
-    width: 30%;
+    width: 40%;
     display: none;
     transition: ease 5s;
 }
 
 .goal-title:hover + .goal-description{
     display: block;
+}
+
+.recipe-submission{
+    padding-top: 40%;
+    padding-left: 10%;
+}
+
+.submission-title{
+    font-family: Grotesk-Bold;
+    color: #161413;
+    font-size: 8rem;
+    width: 50%;
+}
+
+button{
+    border-radius: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 1.5rem;
+    font-family: Grotesk-Light;
+    background-color: #59846c;
+    color: #FCEDD9;
+}
+
+button:hover{
+    border-color: #59846c;
+    background-color: #FCEDD9;
+    color: #59846c;
+}
+
+.copyright{
+    padding-top: 10%;
+    font-family: Grotesk-Light;
+    font-size: 1.2rem;
+    color: #161413;
+    padding-bottom: 5%;
 }
