@@ -59,7 +59,7 @@ Cream - #FCEDD9
     color: #59846c;
     font-size: 3rem;
     top: 5%;
-    left: 5%;
+    left: 3%;
 }
 
 .menu{
@@ -188,6 +188,10 @@ Cream - #FCEDD9
     width: 50%;
 }
 
+.submission-button{
+    padding-top: 1%;
+}
+
 button{
     border-radius: 50px;
     padding-top: 1%;
@@ -196,20 +200,23 @@ button{
     padding-right: 2%;
     font-size: 1.5rem;
     font-family: Grotesk-Light;
-    background-color: #59846c;
+    background-color:#59846c;
     color: #FCEDD9;
+    border: none;
 }
 
 button:hover{
     border-color: #59846c;
-    background-color: #FCEDD9;
-    color: #59846c;
+    background-color: #59846c;
+    color: #FCEDD9;
 }
+
+
 
 .copyright{
     padding-top: 10%;
     font-family: Grotesk-Light;
     font-size: 1.2rem;
-    color: #161413;
-    padding-bottom: 5%;
+    color: #59846c;
+    padding-bottom: 2%;
 }
