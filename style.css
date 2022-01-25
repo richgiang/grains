@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: #FCEDD9;
-    overflow-y: hide;
 }
 
 /* Fonts */
@@ -50,7 +49,7 @@ Cream - #FCEDD9
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .logo{
@@ -76,13 +75,14 @@ Cream - #FCEDD9
     text-decoration: none;
     font-family: Grotesk-Light;
     color: #59846c;
+    font-size: 1rem;
 }
 
 .header{
     font-family: Grotesk-Bold;
     font-size: 11.5rem;
-    width: 90%;
     padding-left: 10%;
+    padding-right: 5%;
 }
 
 .header p span{
@@ -219,4 +219,25 @@ button:hover{
     font-size: 1.2rem;
     color: #59846c;
     padding-bottom: 2%;
+}
+
+@media screen and (max-width: 500px) {
+    
+.menu{
+    flex-direction: column;
+}
+
+.body-container{
+    width: 400px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20%;
+}
+
+.header{
+    font-size: 6rem;
+    width: 100%;
+    padding-left: 0;
+}
+
 }
