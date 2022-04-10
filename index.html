@@ -25,7 +25,7 @@
         </div> -->
     <!-- </div> -->
    
-    <div class="body-container">
+    <!-- <div class="body-container">
         
         <div id="top" class="header">
             <p>
@@ -75,14 +75,38 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <div class="recipe-submission">
             <div class="submission-title">
-                Submit a recipe to the community
+                What are you eating?
             </div>
-            <div class="submission-button">
-                <a href="https://forms.gle/kjSf77DrVk2RQ2R27"><button>CONTRIBUTE</button></a>
+
+            <div class="submission-form">
+                <script>window.addEventListener("load", function() {
+                    const form = document.getElementById('my-form');
+                    form.addEventListener("submit", function(e) {
+                      e.preventDefault();
+                      const data = new FormData(form);
+                      const action = e.target.action;
+                      fetch(action, {
+                        method: 'POST',
+                        body: data,
+                      })
+                      .then(() => {
+                        alert("Success!");
+                      })
+                    });
+                  });</script>
+                <form 
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbxwrCgu6ZkSeiey11EzClfmU73Ptn-YtJEqGvr-p7BWAzcTctUYCOgYrZkMJzOhQWj7/exec"
+                >
+                <input name="Email" type="email" placeholder="Email" required>
+                <input name="Name" type="text" placeholder="Name" required>
+                <input type="Food" type="text" placeholder="What's the dish called?">
+                <button type="submit">Send</button>
+                </form>
             </div>
         </div>
 
